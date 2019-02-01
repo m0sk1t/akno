@@ -1,5 +1,6 @@
 import { connect } from "react-redux";
 import React, { Component } from 'react';
+import { BrowserRouter } from "react-router-dom";
 import {
   Tabs,
   Layout,
@@ -26,12 +27,6 @@ class App extends Component {
     this.state = {
       name: '',
       pass: '',
-      visibility: {
-        login: true,
-        user: false,
-        issue: false,
-        issues: false,
-      }
     };
   }
 
